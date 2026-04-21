@@ -1,0 +1,62 @@
+---
+title: Proposal title
+author: Firstname Lastname
+bibliography: references.bib
+csl: https://www.zotero.org/styles/apa
+thesis:
+  degreetype: "Master of Science" # or Doctor of Philosophy
+  degreetypeabbr: "M.Sc." # or Ph.D.
+  submitmonth: "Month"
+  submityear: "YYYY"
+  institution: "McMaster University"
+  degrees: "B.Sc. (Hons)" # list all previous degrees
+  supervisor: "Supervisor name"
+  member1: "Committee member 1"
+  member2: "Committee member 2"
+  #member3: "Committee member 3" # uncomment if applicable
+execute:
+  echo: false
+format: macproposal-pdf
+    
+---
+
+# Level 1 heading
+
+These are two papers worth reading [@adams1987;@wolpert2011].
+
+\lipsum[1]
+
+## Level 2 heading
+
+\lipsum[2]
+
+### Level 3 heading
+
+\lipsum[3]
+
+```{r}
+#| label: fig-figure1
+#| fig-cap-location: top
+#| fig-cap: "Figure caption title."
+#| fig-subcap: _Note_. Figure caption description
+#| out-width: 50%
+knitr::include_graphics("figures/fig_placeholder.pdf")
+```
+
+\lipsum[4] @fig-figure1 shows some simulated data for a placeholder figure.
+
+#### Level 4 heading
+
+\lipsum[5]
+
+##### Level 5 heading
+
+\lipsum[6]
+
+
+\newpage
+
+# References
+
+::: {#refs}
+:::
